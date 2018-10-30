@@ -40,17 +40,6 @@ def remove_non_strings(array)
   array 
 end
 
-def count_elements(array)
-  hash = {}
-  array.each do |obj| 
-    if hash[obj] == nil 
-      hash[obj] = 1
-    else 
-      hash[obj] += 1   
-    end
-  end
-  return hash
-end
 
 def count_elements(arr) 
 arr.each_with_object(Hash.new(0)) { |g,h| h[g[:name]] += 1 }.
